@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+}
+
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#000000,#1a1a1a,#000000)
+}
+
+
+.card-login{
+    width:370px;
+    padding:45px 35px;
+    background:#111;
+    border:1px solid #222222;
+    border-radius:12px;
+    box-shadow: 0 0 40px rgba(30, 255, 0, 0.342);
+    text-align:center;
+    animation: fadeEntrada 0.6s ease;
+}
+
+
+@keyframes fadeEntrada{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+
+.titulo-login{
+    color:#ffffff;
+    margin-bottom:25px;
+}
+
+.grupo-input{
+    position:relative;
+    margin-bottom:18px;
+
+}
+
+.grupo-input input{
+    width:100%;
+    padding:12px 40px 12px 12px;
+    border-radius:6px;
+    border:1px solid #333;
+    background:#1a1a1a;
+    color:#fff;
+    outline:none;
+    transition:0.3s;
+}
+
+
+.grupo-input input:focus{
+    border-color:#28c002a8;
+    box-shadow:0 0 10px rgba(60, 255, 0, 0.308);
+}
+
+
+.icone{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:14px;
+    color:#058d00;
+}
+
+.botao-login{
+    color: #000000;
+    width:100%;
+    padding:10px 120px;
+    border:none;
+    border-radius:20px;
+    background:#07be01;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+.botao-login:hover{
+    background:#74ff33;
+    transform:scale(1.05);
+}
+
+.links-login{
+    margin-top:22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.links-login a{
+    text-decoration:none;
+    font-size:14px;
+    color:#aaa;
+    transition:0.3s;
+}
+
+.links-login a:hover{
+    color:#2bff00;
+}
+
+.criar-conta{
+    font-weight:bold;
+}
+

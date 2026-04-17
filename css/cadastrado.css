@@ -1,0 +1,540 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: "Plus Jakarta Sans", sans-serif;
+    --fonte-destaque2: "Aldrich", sans-serif;
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --flutua: 8px 8px 17px 0px rgba(0, 0, 0, 0.664);
+    --afunda: inset -2px 2px 6px 0px rgba(0, 0, 0, 0.377);
+    --cor0: #008000;
+    --cor1: #30c030;
+    --cor2: yellowgreen;
+    --pretoclaro:#24202060;
+    --pretoescuro: #171717; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: var(--pretoescuro) ;
+    font-family: var(--fonte-destaque);
+}
+header{
+    background-color: rgb(0, 0, 0);
+    box-shadow: var(--flutua);
+}
+header a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px ;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+
+
+.perfil {
+    display: flex;
+    color: white;
+    margin: 20px 0px 20px  0px;
+    padding: 0.5% 1%;
+    text-decoration: none;
+    
+    font-weight: 5;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+.perfil:hover{
+    transform: scale(1.1);
+    background-color: #615c5c65;
+    
+}
+
+.foto-perfil{
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.perfil{
+    transition: .5s ease;
+}
+ 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+.menu a{
+    transition: .5s ease;
+}
+.menu a:hover{
+    color: var(--cor0);
+}
+.menu li{
+    margin:  0px 25px;
+    list-style: none;
+    transition: .5s ease;
+}
+.menu li:hover{
+    transform: scale(1.2);
+}
+
+
+.logo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+
+main {
+    margin: 0px 20px;
+    max-width: 100%;
+}
+main .via1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 40px;
+    max-width: 100%;
+} 
+
+.via1 .bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main .bloco{
+    background-color: var(--pretoclaro);
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(87, 86, 86, 0.205);
+    box-shadow: 2px 2px 10px 0px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.via1 .bloco h3{
+    font-size: 25px;
+    text-shadow: 1px 1px 2px  rgb(0, 0, 0);
+    font-family: var(--fonte-titulo);    
+}
+
+main .bloco > img {
+    width: 80px;
+    height: 80px;
+    padding: 20px 0px;
+}
+
+.via1 .bloco > p{
+    height: 60px;
+    padding: 30px 20px; 
+    text-align: center;
+    font-size: large;
+    text-shadow: 1px 1px 2px  rgb(0, 0, 0);
+}
+
+.divservicos{
+    height: 350px;
+}
+
+.bloco .botao-geral{
+    color: white;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.bloco .botao-geral:hover{
+    transform: scale(1.1);
+}
+
+
+main .via2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+
+
+.blocao{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 815px;
+}
+
+
+
+
+
+.via2 .dieta{
+    
+    width: 100%;
+    height: 350px;
+    background-image: url('../img/imagemcomida.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.caixa-dieta{
+    height: 350px;
+}
+
+.via2 .dieta h1{
+    color: white;
+    font-size: 40px;
+    padding: 40px 40px 0px 30px ;
+}
+
+.dieta p{
+    color: white;
+    padding: 30px;
+    width: 40%;
+}
+
+.dieta .botao-geral{
+    margin: 10px 30px;
+}
+
+.botao-dieta{
+    display:inline-block;
+    color: white;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin: 20px 30px;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.botao-dieta:hover{
+    transform: scale(1.1);
+}
+.aulas{
+    background-color: var(--pretoclaro);
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(87, 86, 86, 0.205);
+    box-shadow: 2px 2px 10px 0px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.botao-aulas{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.centralizar-botao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.titulo-aulas{
+    color: white;
+    font-size: 20px;
+}
+.aulas .botao-aulas{
+    background-color: #453c3ccd;
+    width: 92%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #57565634;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px 20px;
+    transition: 0.5s ease;
+}
+
+.botao-aulas:hover{
+    background-color: #8a828265;
+}
+.seta{
+    color: #575656;
+}
+.caixa-subtitulo{
+    display: flex;
+    justify-content: space-between;
+}
+.caixa-subtitulo h4{
+    color: white;
+    padding:40px 40px 0px 40px;
+    font-weight:bold ;
+    font-size: 20px;
+}
+.subtitulo-aulas{
+    color: white;
+    padding:30px 40px 10px 40px;
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+}
+
+.item-aulas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloco-aulas{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid rgba(87, 86, 86, 0.205);
+}
+
+.aula-corrida{
+    background-image: url('../img/Atleta\ correndo\ na\ trilha\ lamacenta.png');
+    background-size: 100% 100%;
+    background-position:  center right;
+    border: none;
+    width: 90%;
+}
+.aula-natacao{
+    background-image: url('../img/Nado\ em\ águas\ abertas\ sob\ chuva.png');
+    background-size: 100% 100%;
+    background-position: bottom right ;
+    border: none;
+    width: 90%;
+}
+
+.aula-musculacao{
+    background-image: url('../img/Treino\ intenso\ na\ academia\ moderna.png');
+    background-size: 100% 100%;
+    background-position:  center right;
+    border: none;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+
+.atalho-aula{
+    width: 10px;
+    color: white;
+    text-align: center;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 10px;
+    padding:10px 20px;
+    margin: 20px;
+    margin-top: 50px;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.atalho-aula:hover{
+    background-color: #d4c9c9fd;
+}
+
+
+
+main .via2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 815px;
+}
+
+
+
+
+.via2-1 .desempenho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.via2-1 h1{
+    color: white;
+    width: 90%;
+    padding: 10px 30px;
+    margin-right: 400px;
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+}
+
+.via2-1 .desempenho .grafico-desempenho{
+    background-color: rgba(36, 32, 32, 0.377);
+    height: 245px;
+    width: 90%;
+    margin: 20px;
+    
+    background-image: url('../img/graficodesempenho.png');
+    background-size: 100% 109%;
+    background-repeat: no-repeat;
+}
+
+
+.via2-1 .info-desempenho{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px ;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.info-desempenho .infos{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+}
+
+.info-desempenho .info1{
+    padding: 30px 0px;
+    width:30%;
+}
+
+.via2-1 .info1 > h3{
+    font-size: 40px;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+}
+
+.via2-1 .info1{
+    color: white;
+    text-align:center;
+    padding: 30px;
+}
+
+.info-desempenho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-desempenho button{
+    width: 40%;
+}
+
+.barray{
+    margin: 40px 0px;
+    border-radius: 50px;
+    border-color:#3b393949;
+    background-color: #3b393949;
+}
+
+.barrax{
+    margin: 50px 0px ;
+    padding: 1px;
+    border-radius: 50px;
+    border-color: #3b393949;
+    background-color: #3b393949;
+    
+}
+
+.meus-treinos{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(87, 86, 86, 0.205);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.titulo-treinos{
+    color: white;
+    padding: 20px 40px;
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+}
+
+.caixa-treinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.imagem-musculacao{
+    background-image: url('../img/Mulher\ musculosa\ levantando\ halteres\ na\ academia.png');
+    background-size: 100% 100%;
+}
+.imagem-corrida{
+    background-image: url('../img/homemCorrendo.png');
+    background-size: 100% 100%;
+}
+.imagem-natacao{
+    background-image: url('../img/homem-Nadando.png');
+    background-size: 100% 100%;
+}
+.atalho-treino{
+    width: 100px;
+    
+    text-align: center;
+    color: black;
+    background-color: var(--cor2);
+    border: none;    
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 6px black;
+    padding:20px 40px;
+    margin: 20px 0px ;
+    margin-top: 50px;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.atalho-treino:hover{
+    color: white;
+    background-color: black;
+}
+.treinos{
+    display: flex;
+    justify-content:center ;
+    align-items: end;
+    flex-direction: column;
+    background-color: var(--pretoclaro);
+    width: 90%;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.treinos p{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    margin: 70px 0px;
+    width: 300px;
+    
+}

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: "Plus Jakarta Sans", sans-serif;
+    --fonte-destaque2: "Aldrich", sans-serif;
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --cor0: green;
+    --cor1: rgb(48, 192, 48);
+    --cor2: yellowgreen;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: black;
+    font-size: large;
+    font-weight: 100;
+}
+html{
+    scroll-behavior: smooth;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px ;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-profile .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-green);
+    object-fit: cover;
+}
+
+.user-profile a{
+    transition: .5s ease;
+}
+
+.user-profile :hover{
+    transform: scale(1.2);
+}
+
+.textousuario{
+    color: white;
+}
+ 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+.menu a{
+    transition: .5s ease;
+}
+.menu a:hover{
+    color: var(--cor0);
+}
+.menu li{
+    margin:  0px 25px;
+    list-style: none;
+}
+.menu li{
+    transition: .5s ease;
+}
+.menu li:hover{
+    transform: scale(1.2);
+}
+
+.logo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+
+.logo img{
+    border-radius: 100px;
+}
+
+main{
+    color: white;
+}
+
+.image div{
+    width: 100%;
+    height: 40vh;
+    background-image: url('../img/Design\ sem\ nome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 10px 12px 0px rgba(0, 0, 0, 0.404);
+    margin-bottom: 40px;
+}
+
+.temaimagem {
+    display: flex;
+    font-weight: 900;
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textomenor{
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background-color: #2a2a2a;
+    color: var(--text-color);
+    border: 1px solid #444;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: #73ff00;
+}
+
+
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+}
+
+.chart-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--primary-green); 
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(81, 255, 0);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card-icons {
+    color: greenyellow;
+    font-size: 1.2rem;
+}
+
+.chart-placeholder {
+    width: 100%;
+    height: 250px; 
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: greenyellow;
+    overflow: hidden;
+}
+
+.chart-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-footer-stats {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.card-footer-stats strong {
+    color: greenyellow;
+    font-size: 1.1rem;
+}
+
+.highlight-stats {
+    text-align: center;
+}
+
+.big-percentage {
+    color: greenyellow;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.physical-data {
+    text-align: center;
+    color: var(--primary-green);
+    font-weight: 500;
+}
+
+.weight-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-item span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.stat-item strong {
+    font-size: 1.2rem;
+}
+
+.stat-diff {
+    background-color: var(--primary-green);
+    color: greenyellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.green-splash-bottom {
+    position: fixed;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-green);
+    filter: blur(100px); 
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+
+@media (max-width: 900px) {
+    .charts-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .main-header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+}
+
