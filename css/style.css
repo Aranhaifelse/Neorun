@@ -9,18 +9,22 @@
     --cor0: green;
     --cor1: rgb(48, 192, 48);
     --cor2: yellowgreen;
+    --pretoclaro:#24202060;
+    --pretoescuro: #171717; 
 }
 
 *{
     margin: 0;
     padding: 0;
     font-family: var(--fonte-padrao);
+    text-decoration: none;
 }
 
 body {
     background-color: black;
     font-size: large;
     font-weight: 100;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -313,4 +317,19 @@ ul .check{
     
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70px;
+    background-color: var(--pretoescuro);
+}
+.foot-text{
+    text-align: center;
+    color: white;
+    font-size: small;
+}
 
+.rede-social a{
+    color: white;
+}
