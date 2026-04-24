@@ -97,7 +97,7 @@ header nav {
 }
 
 
-.logo{
+.logo a{
     display: flex;
     height: 100px;
     width: 100px;
@@ -162,11 +162,13 @@ main .bloco > img {
 .bloco .botao-geral{
     color: white;
     background-color: var(--cor0);
+    width: 90%;
     border: none;
     border-radius: 10px;
-    padding: 10px 40px;
+    padding: 10px 0px;
     font-size: medium;
     font-weight: bold;
+    text-align: center;
     transition: 0.5s ease;
 }
 
@@ -192,9 +194,6 @@ main .via2 {
     height: 100%;
     width: 815px;
 }
-
-
-
 
 
 .via2 .dieta{
@@ -537,4 +536,44 @@ main .via2-1 {
     margin: 70px 0px;
     width: 300px;
     
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    background-color: var(--pretoescuro);
+    padding-bottom: 20px;
+}
+.foot-text{
+    text-align: center;
+    color: white;
+    font-size: small;
+    margin-top: 20px;
+}
+
+.foot-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.foot-geral{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    color: white;
+    
+}
+.foot-geral > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-geral a{
+    color: white;
+    font-size: smaller;
+    margin-top: 20px;
 }
