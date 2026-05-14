@@ -432,12 +432,12 @@ ul {
     height: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: transparent solid 2px;
+    border:  rgba(172, 255, 47, 0.322) solid 3px;
     transition: transform 0.3s ease, border 0.3s ease-in;
 }
 .membros  img:hover{
     transform: translateY(-20px);
-    border: greenyellow solid 5px;
+    border: greenyellow solid 3px;
 }
 .profissao{
     color: rgb(141, 141, 141);
@@ -504,7 +504,6 @@ ul {
     color: #09090b;
     background-color: var(--verde-destaque);
     padding: 7px;
-
     border-radius: 15px;
     box-shadow: 0 0px 32px rgba(162, 230, 53, 0.438);
     transform: translate(0%, -60%);
@@ -611,7 +610,9 @@ ul {
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.botao-primario:hover{
+    background-color: rgb(170, 255, 0);
+}
 
 .card .butao-secundario{
     background-color: transparent;
