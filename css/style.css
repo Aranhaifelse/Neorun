@@ -289,6 +289,7 @@ ul {
 .titulos h2 {
     font-size: 5rem;
     font-family: var(--fonte-bebas);
+    
 }
 
 .titulos hr{
@@ -464,32 +465,82 @@ ul {
 }
 
 /* Card individual */
-.card {
+.card .normal,.pop{
     display: flex;
     flex-direction: column;
-    width: 280px;
-    padding: 30px;
+    justify-content: center;
+    width: 300px;
+    
     border: 1px solid rgba(128, 128, 128, 0.055);
     border-radius: 10px;
     color: white;
 
     background-color: var(--preto-claro);
-    background-size: 100% 200%;
-    background-position: top;
-
-    transition: background-position 0.5s ease-in-out, transform 0.5s ease;
+    transition: border-color 0.5s ease-in-out, transform 0.5s ease;
+}
+.card .pop{
+    border: rgba(162, 230, 53, 0.747) solid 1px;
+    background-image: linear-gradient(150deg, rgba(162, 230, 53, 0.212) , var(--preto-claro) 400px);
+}
+.card .normal:hover {
+    border-color: rgba(163, 230, 53, 0.25);
+    transform: translateY(-8px);
+}
+.card .pop:hover {
+    
+    transform: translateY(-8px);
 }
 
-.card:hover {
-    background-position: bottom;
-    transform: scale(1.05);
-}
-
-.card > img {
+.card  img {
     height: 50px;
+
     margin: 0 auto 10px;
+    background-color: var(--verde-destaque);
+    border-radius: 30%;
+    padding: 5px;
 }
 
+.classe-popular .popular{
+    color: #09090b;
+    background-color: var(--verde-destaque);
+    padding: 7px;
+
+    border-radius: 15px;
+    box-shadow: 0 0px 32px rgba(162, 230, 53, 0.438);
+    transform: translate(0%, -60%);
+}
+.classe-popular{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte-condesed);
+    padding: 10px;
+    font-size: 15px;
+}
+.classe-popular .nivel{
+    padding: 10px;
+    color: gray;
+}
+.conjunto-classe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conjunto-classe h4{
+    color: rgb(141, 141, 141);
+    
+    font-size: 15px;
+    font-family: var(--fonte-condesed);
+    font-weight: normal;
+}
+
+.classe{
+    display: flex;
+    justify-content: end;
+    color: gray;
+    padding: 20px;
+    font-family: var(--fonte-condesed);
+    font-size: 15px;
+}
 .card h3 {
     margin-bottom: 10px;
     font-family: var(--fonte-plus);
@@ -503,11 +554,20 @@ ul {
     margin: 20px 0 10px;
 }
 
-.card-preco h2 {
-    font-size: 2rem;
+.card-preco > h2 {
+    font-size: 3rem;
+    font-family: var(--fonte-bebas);
+    font-weight: lighter;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    border-radius: 4px;
+    color: var(--verde-destaque);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    width: 90%;
+}
+.card-preco span{
+    font-family: var(--fonte-condesed);
+    font-weight: bold;
+    font-size: 17px;
+    color: gray;
 }
 
 /* Lista de itens do plano */
@@ -521,36 +581,58 @@ ul {
     font-weight: 300;
     line-height: 30px;
     padding-left: 4px;
+    margin-left: 15%;
 }
 
 .card ul .check {
     list-style-type: "✔ ";
 }
+.card .bloqueio{
+    color: gray;
 
-.card ul .bloqueio {
-    list-style-type: "❌ ";
-    opacity: 0.5;
 }
-
-/* Botão do card */
-.card a {
-    display: inline-block;
-    align-self: flex-start;
-    margin-top: 20px;
-    padding: 10px 16px;
-    color: white;
-    font-weight: bold;
-    background-color: var(--verde-primario);
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.card a:hover {
-    background-color: white;
-    color: var(--verde-primario);
+.card .bloqueio::marker {
+    content: ' x ';
+    font-size: 20px;
     
 }
 
+/* Botão do card */
+.card .botao-primario {
+    display: inline-block;
+    margin: 20px;
+    padding: 13px;
+    color: black;
+    font-weight: bold;
+    font-family: var(--fonte-condesed);
+    background-color: var(--verde-destaque);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.card .butao-secundario{
+    background-color: transparent;
+    display: inline-block;
+    margin: 20px;
+    padding: 13px;
+    color: var(--verde-destaque);
+    font-weight: bold;
+    font-family: var(--fonte-condesed);
+    background-color: transparent;
+    border: var(--verde-destaque) solid 1px; 
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card .butao-secundario:hover {
+    background-color: var(--verde-destaque) ;
+    color:black;
+    
+}
 /* ─────────────────────────────────────────────────────
    RODAPÉ
 ───────────────────────────────────────────────────── */
